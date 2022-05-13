@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* html element */
+:root{
+    --orange: #f2c14e;
+    --winning-blocks: #2d414b;      /*indication that the users has won*/
+}
+
+/* body Style */
+body{
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+
+/* audio file */
+#audio{
+    justify-content: bottom;
+    align-items: bottom;
+}
+
+/* h1 style */
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+/* container class style */
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505C;
+}
+
+/* game board grid */
+#gameBoard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+/*remove right border in every third element in each line*/
+.box:nth-child(3n){
+    border-right: none;
+}
+/*remove bottom border for element after after the 6th element*/
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform; 
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.p1 {
+  color: tomato;
+  /* margin-left: 20px; */
+}
+
+.p2 {
+  color: #33DBFF;
+  /* margin-right: 20px; */
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
