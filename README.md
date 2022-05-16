@@ -19,7 +19,8 @@ There is only two Player options available:
 ##Approach Taken:
 
 ***
-	*
+	+Tutorial
+	
 
 # How To play:
 
@@ -32,3 +33,8 @@ opponent has three in a row or all nine squares are filled. X always goes
 first, and in the event that no one has three in a row, the stalemate is 
 called a cat game.
  
+# Ressource:
+***
+	+https://www.youtube.com/watch?v=oZrp3Atkz18
+	+https://www.w3schools.com/tags/att_video_autoplay.asp
+
